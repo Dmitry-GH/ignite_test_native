@@ -1,0 +1,4 @@
+#Tue May 22 04:18:57 EEST 2018
+base.0=C\:\\Work\\React\\ignite_test_native\\android\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main
+renamed.0=classes.dex
+file.0=C\:\\Work\\React\\ignite_test_native\\android\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main\\classes.dex
