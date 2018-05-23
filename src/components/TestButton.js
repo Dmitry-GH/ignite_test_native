@@ -6,7 +6,7 @@ const TestButton = props =>{
       <View style={styles.buttonWrapp}>
             <TouchableOpacity
                 onPress={props.BtnPress} 
-                style={styles.button}>
+                style={[styles.button, props.rewriteStyle]}>
                     <Text style={styles.buttonText}>{props.BtnText}</Text>
             </TouchableOpacity>
       </View>
@@ -31,7 +31,8 @@ const styles = StyleSheet.create({
         flex: 1,
         flexDirection: 'row',
         alignItems: 'stretch',
-        maxHeight: 250
+        maxHeight: 250,
+        minHeight: 100
     },
     buttonText:{
         color: '#ffffff',

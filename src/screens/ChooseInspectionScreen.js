@@ -10,14 +10,6 @@ export default class ChooseInspectionScreen extends React.Component {
       title: 'Kontrolle',
     };
 
-    _getLog = () => {
-        console.log(`log from: 2`);
-    }
-
-    componentWillMount() {
-      this.props.navigation.setParams({ getLog: this._getLog });
-    }
-
     render(){
       return (
         <View style={Styles.container}>

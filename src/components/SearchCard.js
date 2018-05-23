@@ -5,6 +5,7 @@ const SearchCard = props =>{
     return (
       <View>
             <TouchableOpacity
+                onPress={props.BtnPress}
                 style={styles.card}>
                     <Text style={styles.buttonTextHeader}>{props.cardHeader}</Text>
                     <Text style={styles.buttonText}>{props.cardUserName}</Text>
@@ -24,10 +25,6 @@ const styles = StyleSheet.create({
       marginBottom: 15,
       marginHorizontal: 10,
       borderRadius: 5,
-    //   flex: 1,
-    //   flexDirection: 'column',
-    //   justifyContent: 'center',
-    //   alignItems: 'center'
     },
     buttonTextHeader:{
         color: '#30363a',

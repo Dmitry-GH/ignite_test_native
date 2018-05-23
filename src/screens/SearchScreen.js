@@ -28,37 +28,41 @@ export default class SearchScreen extends React.Component {
                 placeholder={'Nummer oder Name'}
               />
             </View>
-            <ScrollView
-              contentContainerStyle={Styles.SearchScrollWrapp}>
+            <ScrollView>
               <SearchCard 
                 cardHeader={'BA-18-00001'}
                 cardUserName={'Max Mustermann'}
                 cardInfo={'Tageskarte - Gr.Muhl'}
                 cardDate={'25.08.2018 - 26.08.2018'}
+                BtnPress={() => this.props.navigation.navigate('InspectionScreen')}
                 />
               <SearchCard 
                 cardHeader={'BA-18-00001'}
                 cardUserName={'Max Mustermann'}
                 cardInfo={'Tageskarte - Gr.Muhl'}
                 cardDate={'25.08.2018 - 26.08.2018'}
+                BtnPress={() => this.props.navigation.navigate('InspectionScreen')}
                 />
               <SearchCard 
                 cardHeader={'BA-18-00001'}
                 cardUserName={'Max Mustermann'}
                 cardInfo={'Tageskarte - Gr.Muhl'}
                 cardDate={'25.08.2018 - 26.08.2018'}
+                BtnPress={() => this.props.navigation.navigate('InspectionScreen')}
                 />
               <SearchCard 
                 cardHeader={'BA-18-00001'}
                 cardUserName={'Max Mustermann'}
                 cardInfo={'Tageskarte - Gr.Muhl'}
                 cardDate={'25.08.2018 - 26.08.2018'}
+                BtnPress={() => this.props.navigation.navigate('InspectionScreen')}
                 />
               <SearchCard 
                 cardHeader={'BA-18-00001'}
                 cardUserName={'Max Mustermann'}
                 cardInfo={'Tageskarte - Gr.Muhl'}
                 cardDate={'25.08.2018 - 26.08.2018'}
+                BtnPress={() => this.props.navigation.navigate('InspectionScreen')}
                 />
             </ScrollView>
             

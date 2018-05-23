@@ -7,6 +7,8 @@ import StartScreen from "../screens/StartScreen";
 import ChooseInspectionScreen  from "../screens/ChooseInspectionScreen";
 import ScanScreen  from "../screens/ScanScreen";
 import SearchScreen  from "../screens/SearchScreen";
+import InspectionScreen  from "../screens/InspectionScreen";
+import EndInspectionScreen from "../screens/EndInspectionScreen";
 
 const StackNav = createStackNavigator({
     Start: {
@@ -20,6 +22,12 @@ const StackNav = createStackNavigator({
     },
     SearchScreen:{
         screen: SearchScreen
+    },
+    InspectionScreen:{
+        screen: InspectionScreen
+    },
+    EndInspectionScreen:{
+        screen: EndInspectionScreen
     }
 }, {
     initialRouteName: 'Start',

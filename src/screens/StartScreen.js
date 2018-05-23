@@ -18,23 +18,15 @@ export default class StartScreen extends React.Component  {
       };
     };
 
-    _getLog = () => {
-        console.log(`log from: 1`);
-    }
-  
-    componentWillMount() {
-      this.props.navigation.setParams({ getLog: this._getLog });
-    }
-  
-      render(){
-        return (
-          <View style={Styles.container}>
+    render(){
+      return (
+        <View style={Styles.container}>
 
-            <TestButton 
-                BtnText="Kontrollgang starten"
-                BtnPress={() => this.props.navigation.navigate('ChooseInspection')} />
-            
-          </View>
-        );
-      };
+          <TestButton 
+              BtnText="Kontrollgang starten"
+              BtnPress={() => this.props.navigation.navigate('ChooseInspection')} />
+          
+        </View>
+      );
+    };
   }

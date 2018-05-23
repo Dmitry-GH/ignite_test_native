@@ -17,12 +17,6 @@ export default StyleSheet.create({
       justifyContent: 'flex-start',
       maxHeight: 140
     },
-    SearchScrollWrapp: {
-      // flex: 1,
-      // flexDirection: 'column',
-      // justifyContent: 'center',
-      // alignItems: 'stretch',
-    },
     SearchInput:{
       padding: 10,
       marginVertical: 15,
@@ -37,5 +31,20 @@ export default StyleSheet.create({
       borderWidth: 1,
       maxHeight: 80,
       textAlign: 'center'
+    },
+    Kommentar:{
+      padding: 10,
+      marginVertical: 15,
+      marginHorizontal: 10,
+      borderRadius: 5,
+      flex: 1,
+      flexDirection: 'column',
+      justifyContent: 'center',
+      alignItems: 'center',
+      fontSize: 20,
+      borderColor: 'black', 
+      borderWidth: 1,
+      maxHeight: 80,
+      textAlign: 'left'
     }
 });
