@@ -1,4 +1,4 @@
 # Ignite test native
 ## Setup
 1. npm install
-2. `react-native run ios` or `react-native run android`
+2. `npm run ios` or `npm run android`
