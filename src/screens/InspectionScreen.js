@@ -26,7 +26,7 @@ export default class InspectionScreen extends React.Component {
         if (this.state.isTextRequried && this.state.text.length < 1) {
           this.setState({requriedBorder: 'red'});
         }else{
-          this.props.navigation.navigate('EndInspectionScreens')          
+          this.props.navigation.navigate('EndInspectionScreen')          
         }
       }
     }
@@ -35,9 +35,15 @@ export default class InspectionScreen extends React.Component {
       return (
         <View style={Styles.container}>
           <ScrollView>
-          <Text>Kontroll-Code: 4521</Text>
-          <Text>AngelKarte: BA-18-000001</Text>
-          <Text>Angler: Max Mustermann</Text>
+            <Text
+              style={[styles.text, styles.kontrollCode]}>
+              Kontroll-Code: 4521</Text>
+            <Text
+              style={styles.text}>
+              AngelKarte: BA-18-000001</Text>
+            <Text
+              style={styles.text}>
+              Angler: Max Mustermann</Text>
             <TestButton
                 rewriteStyle={{backgroundColor: this.state.btnOkColor}}
                 BtnText="OK"
@@ -71,3 +77,15 @@ export default class InspectionScreen extends React.Component {
       );
     }
 }
+
+const styles = StyleSheet.create({
+  text:{
+    fontWeight: 'bold',
+    color: '#707e87',
+    fontSize: 20,
+    textAlign: 'center'
+  },
+  kontrollCode:{
+    color: 'black'
+  }
+})

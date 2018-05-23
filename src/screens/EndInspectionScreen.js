@@ -10,26 +10,21 @@ export default class EndInspectionScreen extends React.Component {
       title: 'Gewasser',
     };
 
-    constructor(props) {
-      super(props);
-      this.state = { text: '' };
-    }
-
     render(){
       return (
         <View style={Styles.container}>
             <ScrollView>
               <SearchCard 
                 cardInfo={'Gr.Muhl - Allgemeine Strecke'}
-                BtnPress={() => this.props.navigation.navigate('InspectionScreen')}
+                BtnPress={() => this.props.navigation.navigate('ThankYouScreen')}
                 />
               <SearchCard 
                 cardInfo={'Gr.Muhl - Fliegenstrecke'}
-                BtnPress={() => this.props.navigation.navigate('InspectionScreen')}
+                BtnPress={() => this.props.navigation.navigate('ThankYouScreen')}
                 />
               <SearchCard 
                 cardInfo={'Ziegelteich'}
-                BtnPress={() => this.props.navigation.navigate('InspectionScreen')}
+                BtnPress={() => this.props.navigation.navigate('ThankYouScreen')}
                 />
             </ScrollView>
             

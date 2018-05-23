@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { View, Text } from 'react-native';
+import { View, Text, ScrollView } from 'react-native';
 import QRCodeScanner from 'react-native-qrcode-scanner';
 import { createStackNavigator, createDrawerNavigator } from 'react-navigation';
 
@@ -22,6 +22,7 @@ class ScanScreen extends React.Component {
 
   render() {
     return (
+      <ScrollView>
         <QRCodeScanner
           reactivate= {true}
           showMarker= {true}
@@ -30,6 +31,7 @@ class ScanScreen extends React.Component {
             <Text>{this.state.qr}</Text>
           }
         />
+      </ScrollView>
     );
   }
 }

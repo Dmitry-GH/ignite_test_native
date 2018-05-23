@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, Button } from 'react-native';
+import { StyleSheet, Text, View, Button} from 'react-native';
 import { createStackNavigator, createDrawerNavigator } from 'react-navigation';
 
 import Styles from "../styles/Styles";
@@ -13,7 +13,7 @@ export default class ChooseInspectionScreen extends React.Component {
     render(){
       return (
         <View style={Styles.container}>
-            <TestButton 
+            <TestButton
                 BtnText="Scannen"
                 BtnPress={() => this.props.navigation.navigate('ScanScreen')} />
             <TestButton 

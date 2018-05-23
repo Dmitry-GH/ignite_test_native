@@ -10,7 +10,7 @@ const TestButton = props =>{
                     <Text style={styles.buttonText}>{props.BtnText}</Text>
             </TouchableOpacity>
       </View>
-    );  
+    );
 }
 
 const styles = StyleSheet.create({
@@ -32,7 +32,7 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         alignItems: 'stretch',
         maxHeight: 250,
-        minHeight: 100
+        minHeight: 150
     },
     buttonText:{
         color: '#ffffff',

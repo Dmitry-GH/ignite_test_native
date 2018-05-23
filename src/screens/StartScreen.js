@@ -21,11 +21,9 @@ export default class StartScreen extends React.Component  {
     render(){
       return (
         <View style={Styles.container}>
-
-          <TestButton 
-              BtnText="Kontrollgang starten"
-              BtnPress={() => this.props.navigation.navigate('ChooseInspection')} />
-          
+            <TestButton 
+                BtnText="Kontrollgang starten"
+                BtnPress={() => this.props.navigation.navigate('ChooseInspection')} />
         </View>
       );
     };

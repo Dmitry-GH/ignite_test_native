@@ -9,26 +9,16 @@ import ScanScreen  from "../screens/ScanScreen";
 import SearchScreen  from "../screens/SearchScreen";
 import InspectionScreen  from "../screens/InspectionScreen";
 import EndInspectionScreen from "../screens/EndInspectionScreen";
+import ThankYouScreen from "../screens/ThankYouScreen";
 
 const StackNav = createStackNavigator({
-    Start: {
-        screen: StartScreen,
-    },
-    ChooseInspection: {
-        screen: ChooseInspectionScreen,
-    },
-    ScanScreen:{
-        screen: ScanScreen
-    },
-    SearchScreen:{
-        screen: SearchScreen
-    },
-    InspectionScreen:{
-        screen: InspectionScreen
-    },
-    EndInspectionScreen:{
-        screen: EndInspectionScreen
-    }
+    Start: StartScreen,
+    ChooseInspection:ChooseInspectionScreen,
+    ScanScreen:ScanScreen,
+    SearchScreen:SearchScreen,
+    InspectionScreen:InspectionScreen,
+    EndInspectionScreen:EndInspectionScreen,
+    ThankYouScreen: ThankYouScreen
 }, {
     initialRouteName: 'Start',
     navigationOptions: {

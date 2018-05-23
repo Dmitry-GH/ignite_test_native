@@ -10,6 +10,9 @@ export default StyleSheet.create({
       justifyContent: 'flex-start',
       flexDirection: 'column'
     },
+    scrollContainer:{
+      flex: 1
+    },
     SearchWrapp:{
       flex: 1,
       flexDirection: 'column',
@@ -46,5 +49,17 @@ export default StyleSheet.create({
       borderWidth: 1,
       maxHeight: 80,
       textAlign: 'left'
+    },
+    thankText:{
+      color: 'black',
+      fontWeight: '100',
+      marginVertical: 35,
+      marginHorizontal: 30,
+      fontSize: 40,
+      flex: 0,
+      flexDirection: 'column',
+      justifyContent: 'center',
+      alignItems: 'center',
+      textAlign: 'center'
     }
 });
