@@ -3,11 +3,19 @@ import { StyleSheet, Text, View, Button} from 'react-native';
 import { createStackNavigator, createDrawerNavigator } from 'react-navigation';
 
 import Styles from "../styles/Styles";
+import MenuButton from '../components/MenuButton';
 import TestButton  from "../components/TestButton";
 
 export default class ChooseInspectionScreen extends React.Component {
-    static navigationOptions = {
-      title: 'Kontrolle',
+    static navigationOptions = ({ navigation }) => {
+      const params = navigation.state.params || {};
+
+      return {
+        headerTitle: 'Kontrolle',
+        headerLeft: (
+          <MenuButton BtnPress = {() => navigation.openDrawer()} />
+        ),
+      };
     };
 
     render(){

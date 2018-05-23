@@ -2,11 +2,19 @@ import React from 'react';
 
 import { View, Text, ScrollView } from 'react-native';
 import QRCodeScanner from 'react-native-qrcode-scanner';
+import MenuButton from '../components/MenuButton';
 import { createStackNavigator, createDrawerNavigator } from 'react-navigation';
 
 class ScanScreen extends React.Component {
-  static navigationOptions = {
-    title: 'Scan QR code',
+  static navigationOptions = ({ navigation }) => {
+    const params = navigation.state.params || {};
+
+    return {
+      headerTitle: 'Scan QR code',
+      headerLeft: (
+        <MenuButton BtnPress = {() => navigation.openDrawer()} />
+      ),
+    };
   };
 
   constructor(props) {

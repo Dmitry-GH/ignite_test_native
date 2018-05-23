@@ -10,6 +10,7 @@ import SearchScreen  from "../screens/SearchScreen";
 import InspectionScreen  from "../screens/InspectionScreen";
 import EndInspectionScreen from "../screens/EndInspectionScreen";
 import ThankYouScreen from "../screens/ThankYouScreen";
+import DrawerCustom from "./DrawerCustom";
 
 const StackNav = createStackNavigator({
     Start: StartScreen,
@@ -42,7 +43,8 @@ const RootStack = createDrawerNavigator({
         screen: StackNav
     }
 },{
-    drawerBackgroundColor: '#30363a'
+    drawerBackgroundColor: '#30363a',
+    contentComponent: DrawerCustom
 });
 
 export default RootStack;

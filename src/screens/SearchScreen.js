@@ -3,11 +3,19 @@ import { StyleSheet, Text, View, TextInput, ScrollView} from 'react-native';
 import { createStackNavigator, createDrawerNavigator } from 'react-navigation';
 
 import Styles from "../styles/Styles";
+import MenuButton from '../components/MenuButton';
 import SearchCard  from "../components/SearchCard";
 
 export default class SearchScreen extends React.Component {
-    static navigationOptions = {
-      title: 'Suche',
+    static navigationOptions = ({ navigation }) => {
+      const params = navigation.state.params || {};
+
+      return {
+        headerTitle: 'Suche',
+        headerLeft: (
+          <MenuButton BtnPress = {() => navigation.openDrawer()} />
+        ),
+      };
     };
 
     constructor(props) {

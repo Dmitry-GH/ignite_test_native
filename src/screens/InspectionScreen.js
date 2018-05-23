@@ -3,11 +3,19 @@ import { StyleSheet, Text, View, Button, TextInput, ScrollView } from 'react-nat
 import { createStackNavigator, createDrawerNavigator } from 'react-navigation';
 
 import Styles from "../styles/Styles";
+import MenuButton from '../components/MenuButton';
 import TestButton  from "../components/TestButton";
 
 export default class InspectionScreen extends React.Component {
-    static navigationOptions = {
-      title: 'Kontrolle',
+    static navigationOptions = ({ navigation }) => {
+      const params = navigation.state.params || {};
+
+      return {
+        headerTitle: 'Kontrolle',
+        headerLeft: (
+          <MenuButton BtnPress = {() => navigation.openDrawer()} />
+        ),
+      };
     };
 
     constructor(props) {
@@ -69,9 +77,11 @@ export default class InspectionScreen extends React.Component {
                 multiline={true}
                 numberOfLines={4}
               />
-              <TestButton
-                BtnText="Kontrolle Speichern"
-                BtnPress={this.goNext} />
+              { this.state.isClicked ? 
+                (<TestButton BtnText="Kontrolle Speichern" BtnPress={this.goNext} />) 
+                : 
+                (<Text></Text>)
+              }
           </ScrollView>
         </View>
       );
